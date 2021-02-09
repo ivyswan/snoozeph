@@ -1,10 +1,18 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
 
+body {
+    background-color: $background-color;
+    color: $font-color;
+    font-family: 'Lato', sans-serif;
+}
+
+circle {
+    fill: #CCAFA5;
+}
+
 #wrapper-navbar {
-    .navbar-toggler {
-        border: none;
-    }    
+    display: none;
 }
 
 .home-banner {
@@ -12,33 +20,135 @@
     background-image: url(../img/home-banner.jpg);
     background-size: cover;
     background-position: center;
+    @media(max-width: $sm) {
+        height: 200px;
+    }
 }
 
 .products {
     margin-top: 100px;
     margin-bottom: 100px;
+    @media(max-width: $lg) {
+        margin-top: 50px;
+        margin-bottom: 50px;        
+    }
+    @media(max-width: $sm) {
+        margin-top: 50px;
+        margin-bottom: 30px;        
+    }
+    h2 {
+        font-family: 'Homemade Apple', cursive;
+        font-size: 50px;
+        margin-bottom: 50px;
+        @media(max-width: $lg) {
+            margin-bottom: 0;
+        }
+        @media(max-width: $sm) {
+            font-size: 30px;
+        }
+    }
+    p {
+        text-transform: uppercase;
+        line-height: .5;
+        @media(max-width: $sm) {
+            line-height: .2;
+        }
+    }
+    img {
+        margin-bottom: 30px;
+        height: 300px;
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+        transition: .3s;
+        @media(max-width: $md) {
+            height: auto;
+        }
+        @media(max-width: $lg) {
+            margin-top: 30px;
+        }
+        @media(max-width: $sm) {
+            margin-bottom: 25px;
+        }
+    }
+    img:hover {
+        box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
+        transform: scale(1.05,1.05);        
+    }
+    .product-item {
+        @media(max-width: $sm) {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .feedback {
     margin-top: 100px;
     margin-bottom: 100px;
+    @media(max-width: $lg) {
+        margin-top: 50px;
+        margin-bottom: 50px;        
+    }
+    @media(max-width: $sm) {
+        margin-top: 0;
+        margin-bottom: 0;        
+    }
+    .testimonial-other {
+        display: none;
+    }
+    .light_grey-classic_style .main-wrapper, .easy_testimonial .main-wrapper:after {
+        background: #F6F1E7;
+    }
+    .easy_testimonial .title-area-3 .easy_testimonial_title, .easy_testimonial .main-content-3 p, .easy_testimonial .footer-text-3 .testimonial-client {
+        color: #CCAFA5;
+    }
+    .easy-t-cycle-pager span.cycle-pager-active {
+        color: #CCAFA5;
+    }
+    .testimonial_body {
+        font-family: 'Homemade Apple', cursive;
+    }
+    .easy_testimonial .right-icon-3 i {
+        color: #AAAAAA;
+    }
 }
 
 .faqs {
     margin-top: 100px;
     margin-bottom: 100px;
+    @media(max-width: $lg) {
+        margin-top: 50px;
+        margin-bottom: 50px;        
+    }
+    @media(max-width: $sm) {
+        margin-top: 30px;
+        margin-bottom: 50px;        
+    }
     .accordion-button:focus {
         outline: none;
         border: none;
         box-shadow: none;
     }
+    .accordion-button:not(.collapsed), .accordion-button {
+        background-color: $background-color;
+        color: $font-color;
+    }
+    .accordion-button {
+        font-weight: 700;
+    }
+    .accordion-body {
+        text-align: center;
+        span {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        ul {
+            list-style-type: none;
+        }
+    }
 }
 
 .footer {
-	background-color: rgba(32,37,41,0.9);
-	border-top: 1px solid rgba(255,255,255,0.1);
-    color: rgba(255,255,255,.5);
-    height: 400px;
+	background-color: #988E92;
+    color: #F6F1E7;
     ul {
         padding: 0;
         margin-top: 9rem;
@@ -46,17 +156,65 @@
         flex-direction: row;
         justify-content: space-around;
         list-style-type: none;
+        @media(max-width: $md) {
+            margin-top: 4rem;
+            margin-bottom: 0;
+        }
+        @media(max-width: $sm) {
+            margin-top: 3rem;
+            margin-bottom: 0;
+            justify-content: space-evenly;
+        }
     }
     a {
         font-size: 4rem;
-        color: rgba(255,255,255,.5);
+        @media(max-width: $md) {
+            font-size: 3rem;
+        }
+        color: #F6F1E7;
         transition: ease 0.25s all;
         &:hover {
-            color: white;
+            color: #CCAFA5;
         }    
     }
     i {
         font-weight: 400;
+    }
+}
+
+#single-wrapper {
+    @media(max-width: $sm) {
+        padding-bottom: 0;
+    }
+    h1 {
+        font-family: 'Homemade Apple', cursive;
+        font-size: 50px;
+    }  
+    a {
+        color: $font-color;
+    }  
+    img {
+        box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+    }
+    .wp-block-gallery {
+        margin-bottom: 30px;
+    }
+    .col-lg-12 {
+        margin-bottom: 30px;
+    }
+    .btn-outline-secondary {
+        border-color: #CCAFA5;
+    }
+    .btn-outline-secondary:hover {
+        background-color: #988E92;
+        color: #F6F1E7;
+        border: 1px solid #988E92;
     }
 }
 

@@ -17,16 +17,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="footer" id="contact">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-sm-9 mx-auto">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-sm-9">
                 <ul>
-                    <li>
+                    <li class="animate__animated animate__rotateIn animate__delay-2s">
                         <a href="mailto:snooze.ph@gmail.com"><i class="far fa-envelope"></i></a>
                     </li>    
-                    <li>
+                    <li class="animate__animated animate__rotateIn animate__delay-3s">
                         <a href="https://www.instagram.com/snooze.ph/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </li>
-                    <li>
+                    <li class="animate__animated animate__rotateIn animate__delay-4s">
                         <a href="https://www.facebook.com/snoozeph-111325980588585" target="_blank"><i class="fab fa-facebook"></i></a>
                     </li>                                    
                 </ul>
@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <hr>
         <div class="row">
             <div class="col-lg-12">
-                <p class="text-center">snooze.ph <?php echo date('Y'); ?> <span>&#124; Website by Cygnify Ltd.</span></p>
+                <p class="text-center">snooze.ph <?php echo date('Y'); ?></p>
             </div>      
         </div>
     </div><!-- .container-->

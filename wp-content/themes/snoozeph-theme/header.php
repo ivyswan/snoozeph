@@ -21,17 +21,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<!-- Fonts -->
-	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Lato:wght@300;700&display=swap" rel="stylesheet">
 	<!-- Font Awesome Kit Code -->
 	<script src="https://kit.fontawesome.com/d0aa6eea1c.js" crossorigin="anonymous"></script> 
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<?php wp_head(); ?>
+	<style>
+	.animatedfs_menu_list li>a:before, .animatedfsmenu .animatedfsmenu-navbar-toggler .bar {
+		background: #988E92!important;
+	}
+	</style>
 </head>
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
-	<div class="home-banner"><!-- .home-banner in template-home.php-->	
 	
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar">
@@ -65,9 +72,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					?>
 					<!-- end custom logo -->
 
-				<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<span class="navbar-toggler-icon"></span>
-				</button> -->
+				</button>
 
 				<!-- The WordPress Menu goes here -->
 				<?php
