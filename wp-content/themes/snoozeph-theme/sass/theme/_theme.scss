@@ -37,7 +37,7 @@ circle {
         margin-bottom: 30px;        
     }
     h2 {
-        font-family: 'Homemade Apple', cursive;
+        font-family: 'Meddon', cursive;
         font-size: 50px;
         margin-bottom: 50px;
         @media(max-width: $lg) {
@@ -52,6 +52,7 @@ circle {
         line-height: .5;
         @media(max-width: $sm) {
             line-height: .2;
+            font-size: 14px
         }
     }
     img {
@@ -120,7 +121,7 @@ circle {
     }
     @media(max-width: $sm) {
         margin-top: 30px;
-        margin-bottom: 50px;        
+        margin-bottom: 50px;   
     }
     .accordion-button:focus {
         outline: none;
@@ -133,15 +134,22 @@ circle {
     }
     .accordion-button {
         font-weight: 700;
+        @media(max-width: $sm) {
+            font-size: 14px;
+        }
     }
     .accordion-body {
         text-align: center;
+        @media(max-width: $sm) {
+            font-size: 14px;
+        }
         span {
             text-transform: uppercase;
             font-weight: 700;
         }
         ul {
             list-style-type: none;
+            padding-left: 0;
         }
     }
 }
@@ -171,6 +179,9 @@ circle {
         @media(max-width: $md) {
             font-size: 3rem;
         }
+        @media(max-width: $sm) {
+            font-size: 2rem;
+        }
         color: #F6F1E7;
         transition: ease 0.25s all;
         &:hover {
@@ -180,6 +191,12 @@ circle {
     i {
         font-weight: 400;
     }
+    p {
+        font-size: 14px;
+        @media(max-width: $sm) {
+            font-size: 12px;
+        }
+    }
 }
 
 #single-wrapper {
@@ -187,8 +204,11 @@ circle {
         padding-bottom: 0;
     }
     h1 {
-        font-family: 'Homemade Apple', cursive;
+        font-family: 'Meddon', cursive;
         font-size: 50px;
+        @media(max-width: $sm) {
+            font-size: 30px;
+        }
     }  
     a {
         color: $font-color;

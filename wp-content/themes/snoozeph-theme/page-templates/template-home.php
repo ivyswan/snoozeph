@@ -76,13 +76,15 @@ get_header();
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <p>BPI</p>
-                            <p>BDO</p>
-                            <p>Metrobank</p>
-                            <p>GCash</p>
-                            <p>PayMaya</p>
-                            <p><span>Same day delivery:</span> via Grab / Lalamove / Mr. Speedy</p>
-                            <p><span>Provincial:</span> via J&T</p>
+                            <ul>
+                                <li>BPI</li>
+                                <li>BDO</li>
+                                <li>Metrobank</li>
+                                <li>GCash</li>
+                                <li>PayMaya</li>
+                            </ul>
+                            <p><span>Same day delivery:</span><br>via Grab / Lalamove / Mr. Speedy</p>
+                            <p><span>Provincial:</span><br>via J&T</p>
                         </div>
                         </div>
                     </div>
