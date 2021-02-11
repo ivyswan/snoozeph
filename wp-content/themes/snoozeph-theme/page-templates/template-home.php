@@ -16,7 +16,13 @@ get_header();
 <div class="home-banner animate__animated animate__fadeInDown animate__slow">	
     <div class="container">
         <div class="row">
-        
+            <div class="home-banner-heading col-lg-12">
+                <h1 class="animate__animated animate__fadeInUp animate__slow animate__delay-1s">snooze.ph</h1>
+                <p>Sleep in style</p>
+            </div>
+            <div class="col-lg-12">
+                <a href="#products"><button type="button" class="btn btn-secondary">Shop now</button></a>
+            </div>
         </div><!-- .row-->
     </div><!-- .container-->
 </div><!-- .home-banner in header.php-->

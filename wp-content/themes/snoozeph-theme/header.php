@@ -22,7 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Meddon&family=Lato:wght@300;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Homemade+Apple&family=Lato:wght@300;700&family=Meddon&family=Sacramento&display=swap" rel="stylesheet">
 	<!-- Font Awesome Kit Code -->
 	<script src="https://kit.fontawesome.com/d0aa6eea1c.js" crossorigin="anonymous"></script> 
 	<!-- Animate CSS -->
