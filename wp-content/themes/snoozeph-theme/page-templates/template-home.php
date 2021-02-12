@@ -41,7 +41,7 @@ get_header();
                 <?php if ( $allPostsWPQuery->have_posts() ) : ?>                       
 
                     <?php while ( $allPostsWPQuery->have_posts() ) : $allPostsWPQuery->the_post(); ?>
-                    <div class="product-item col-lg-4 col-sm-6 text-center animate__animated animate__fadeInUp animate__slow animate__delay-2s"> 
+                    <div class="product-item col-lg-4 col-6 text-center animate__animated animate__fadeInUp animate__slow animate__delay-2s"> 
                         <a href="<?php the_permalink(); ?>">
                             <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
 <img src="<?php echo $url ?>" />
