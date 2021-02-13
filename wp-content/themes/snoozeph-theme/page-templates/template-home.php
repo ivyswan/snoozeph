@@ -81,17 +81,9 @@ get_header();
                         </button>
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>BPI</li>
-                                <li>BDO</li>
-                                <li>Metrobank</li>
-                                <li>GCash</li>
-                                <li>PayMaya</li>
-                            </ul>
-                            <p><span>Same day delivery:</span><br>via Grab / Lalamove / Mr. Speedy</p>
-                            <p><span>Provincial:</span><br>via J&T</p>
-                        </div>
+                            <div class="accordion-body">
+                                <?php echo do_shortcode("[do_widget id=text-2]"); ?>
+                            </div>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -101,24 +93,9 @@ get_header();
                         </button>
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p><span>Free Size</span></p>
-                            <p>(best fit med to semi large frame)</p>
-                            <p>small up to semi-large frame</p>
-                            <ul>
-                                <li>Bust: up to 38"</li>
-                                <li>Waist: up to 35"</li>
-                                <li>Hips: up to 38"</li>
-                            </ul>
-                            <p><span>Plus Size</span></p>
-                            <p>(best fit XXL frame)</p>
-                            <p>up to 3XL</p>
-                            <ul>
-                                <li>Bust: up to 47"</li>
-                                <li>Waist: up to 45"</li>
-                                <li>Hips: up to 49"</li>
-                            </ul>
-                        </div>
+                            <div class="accordion-body">
+                                <?php echo do_shortcode("[do_widget id=text-3]"); ?>
+                            </div>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -129,11 +106,8 @@ get_header();
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <p>Hand wash in cold water.</p>
-                            <p>Do not bleach.</p>
-                            <p>Turn inside out and iron in low heat.</p>
-                            <p>When using a machine, turn to mild or delicate cycle. Using a laundry mesh is highly recommended. Without the mesh, avoid using the machine.</p>
-                        </div>
+                                <?php echo do_shortcode("[do_widget id=text-4]"); ?>
+                            </div>
                         </div>
                     </div>
                 </div><!-- .accordion-->
