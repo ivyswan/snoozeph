@@ -26,7 +26,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- Font Awesome Kit Code -->
 	<script src="https://kit.fontawesome.com/d0aa6eea1c.js" crossorigin="anonymous"></script> 
 	<!-- Animate CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css">
+	<script src="<?php echo get_template_directory_uri(); ?>/js/wow.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/custom.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 	<?php wp_head(); ?>
 	<style>
 	.animatedfs_menu_list li>a:before, .animatedfsmenu .animatedfsmenu-navbar-toggler .bar {

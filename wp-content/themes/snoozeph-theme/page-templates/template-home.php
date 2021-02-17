@@ -13,11 +13,11 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 
-<div class="home-banner animate__animated animate__fadeInDown animate__slow">	
+<div class="home-banner wow fadeInDownBig" data-wow-duration="2s">	
     <div class="container">
         <div class="row">
             <div class="home-banner-heading col-lg-12">
-                <h1 class="animate__animated animate__fadeInUp animate__slow animate__delay-1s">snooze.ph</h1>
+                <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s">snooze.ph</h1>
                 <p>Sleep in style</p>
             </div>
             <div class="col-lg-12">
@@ -27,11 +27,27 @@ get_header();
     </div><!-- .container-->
 </div><!-- .home-banner in header.php-->
 
+<div class="our-story">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-5 col-12 wow fadeIn" data-wow-delay="1s">
+                <h2>Our Story</h2>
+                <p>Year 2020 has a huge impact on us, but we still need to continue our life to make a living.</p>
+                <p>Clearly last May 2020 had become an afterthought, the realization leads to a journey to find comfortable, and quality pieces while lounging at home.</p>
+                <p>Snooze.ph is a sleepwear and loungewear in one. Focused on bringing comfort and style during leisure time. Each piece  we create is the product of months of designing, sourcing, and producing with only quality materials.</p>
+                <p>You deserve this! Our team is constantly reaching for dreamy, soft and breathable pieces. We will commit ourselves to continue to provide the best quality sleepwear and loungewear for everyone.</p>
+            </div>
+            <div class="col-lg-3 d-lg-block d-none wow fadeIn" id="story1"></div>
+            <div class="col-lg-3 d-lg-block d-none wow fadeIn" data-wow-delay="1s" id="story2"></div>
+        </div><!-- .row-->
+    </div><!-- .container-->
+</div><!-- .our-story-->
+
 <div class="products" id="products">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="text-center animate__animated animate__fadeInDown animate__slow animate__delay-2s">Products</h2>
+                <h2 class="text-center wow fadeInDown" data-wow-duration="2s">Products</h2>
             </div>
         </div><!-- .row-->
         <div class="row">                                  
@@ -41,10 +57,10 @@ get_header();
                 <?php if ( $allPostsWPQuery->have_posts() ) : ?>                       
 
                     <?php while ( $allPostsWPQuery->have_posts() ) : $allPostsWPQuery->the_post(); ?>
-                    <div class="product-item col-lg-4 col-6 text-center animate__animated animate__fadeInUp animate__slow animate__delay-2s"> 
+                    <div class="product-item col-lg-4 col-6 text-center wow fadeInUp" data-wow-delay="1s"> 
                         <a href="<?php the_permalink(); ?>">
                             <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
-<img src="<?php echo $url ?>" />
+                            <img src="<?php echo $url ?>" />
                         </a>
                         <p><?php the_title(); ?></p>
                         <?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?>
@@ -62,7 +78,7 @@ get_header();
 <div class="feedback" id="feedback">
     <div class="container">
         <div class="row justify-content-center">     
-            <div class="col-lg-10 col-sm-12 animate__animated animate__fadeInLeft animate__slow animate__delay-5s">
+            <div class="col-lg-10 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <?php echo do_shortcode('[testimonials_cycle theme="light_grey-classic_style" count="-1" order_by="date" order="ASC" show_title="0" use_excerpt="0" show_thumbs="1" show_date="1" show_other="1" hide_view_more="0" output_schema_markup="1" show_rating="stars" testimonials_per_slide="1" transition="fade" timer="5000" pause_on_hover="true" auto_height="container" show_pager_icons="1" prev_next="1" display_pagers_above="0" paused="0"]'); ?>
             </div>            
         </div><!-- .row-->
@@ -77,7 +93,7 @@ get_header();
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Payment and Shipping Details
+                            Tracking and Shipping Details
                         </button>
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -89,24 +105,24 @@ get_header();
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Size Guide
+                            Return and Exchange Policy
                         </button>
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <?php echo do_shortcode("[do_widget id=text-3]"); ?>
+                                <?php echo do_shortcode("[do_widget id=text-4]"); ?>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Care Guide
+                            Size Guide
                         </button>
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                                <?php echo do_shortcode("[do_widget id=text-4]"); ?>
+                                <?php echo do_shortcode("[do_widget id=text-3]"); ?>
                             </div>
                         </div>
                     </div>

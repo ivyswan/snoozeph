@@ -20,13 +20,13 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="row justify-content-center">
             <div class="col-lg-6 col-sm-9">
                 <ul>
-                    <li class="animate__animated animate__rotateIn animate__delay-2s">
-                        <a href="mailto:snooze.ph@gmail.com"><i class="far fa-envelope"></i></a>
+                    <li class="wow rotateIn">
+                        <a href="mailto:snoooze.ph@gmail.com"><i class="far fa-envelope"></i></a>
                     </li>    
-                    <li class="animate__animated animate__rotateIn animate__delay-3s">
+                    <li class="wow rotateIn" data-wow-delay="1s">
                         <a href="https://www.instagram.com/snooze.ph/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </li>
-                    <li class="animate__animated animate__rotateIn animate__delay-4s">
+                    <li class="wow rotateIn" data-wow-delay="2s">
                         <a href="https://www.facebook.com/snoozeph-111325980588585" target="_blank"><i class="fab fa-facebook"></i></a>
                     </li>                                    
                 </ul>
