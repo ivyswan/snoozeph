@@ -31,11 +31,7 @@ get_header();
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-5 col-12 wow fadeIn" data-wow-delay="1s">
-                <h2>Our Story</h2>
-                <p>Year 2020 has a huge impact on us, but we still need to continue our life to make a living.</p>
-                <p>Clearly last May 2020 had become an afterthought, the realization leads to a journey to find comfortable, and quality pieces while lounging at home.</p>
-                <p>Snooze.ph is a sleepwear and loungewear in one. Focused on bringing comfort and style during leisure time. Each piece  we create is the product of months of designing, sourcing, and producing with only quality materials.</p>
-                <p>You deserve this! Our team is constantly reaching for dreamy, soft and breathable pieces. We will commit ourselves to continue to provide the best quality sleepwear and loungewear for everyone.</p>
+                <?php echo do_shortcode("[do_widget id=text-5]"); ?>
             </div>
             <div class="col-lg-3 d-lg-block d-none wow fadeIn" id="story1"></div>
             <div class="col-lg-3 d-lg-block d-none wow fadeIn" data-wow-delay="1s" id="story2"></div>

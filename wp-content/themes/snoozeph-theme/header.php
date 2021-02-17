@@ -17,6 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="snooze.ph | Sleep in style.">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -35,9 +36,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</script>
 	<?php wp_head(); ?>
 	<style>
-	.animatedfs_menu_list li>a:before, .animatedfsmenu .animatedfsmenu-navbar-toggler .bar {
-		background: #988E92!important;
-	}
+		.animatedfs_menu_list li>a:before, .animatedfsmenu .animatedfsmenu-navbar-toggler .bar {
+			background: #988E92!important;
+		}
 	</style>
 </head>
 
