@@ -435,3 +435,38 @@ body {
         border: 1px solid #988E92;
     }
 }
+
+.privacy-policy {
+    .privacy {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    h1 {
+        font-family: $heading;
+        font-size: 40px;
+        text-transform: lowercase;
+        margin-bottom: 30px;
+        @media(max-width: $sm) {
+            font-size: 25px;
+        }
+    }  
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        @media(max-width: $sm) {
+            font-size: 20px;
+        }
+    } 
+    h3 {
+        font-size: 25px;
+        font-weight: 700;
+        @media(max-width: $sm) {
+            font-size: 15px;
+        }
+    } 
+    p {
+        @media(max-width: $sm) {
+            font-size: 14px;
+        }        
+    }   
+}
