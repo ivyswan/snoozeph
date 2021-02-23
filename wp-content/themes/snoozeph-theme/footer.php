@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="col-lg-6 col-sm-9">
                 <ul>
                     <li class="wow rotateIn">
-                        <a href="mailto:snoooze.ph@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="mailto:snoozeph.shop@gmail.com"><i class="far fa-envelope"></i></a>
                     </li>    
                     <li class="wow rotateIn" data-wow-delay="1s">
                         <a href="https://www.instagram.com/snooze.ph/" target="_blank"><i class="fab fa-instagram"></i></a>

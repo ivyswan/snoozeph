@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
 		</div>
 		<div class="col-lg-12 wow fadeInUp" data-wow-duration="1s">
 			<?php the_content(); ?>
-			<a href="mailto:snooze.ph@gmail.com"><button type="button" class="btn btn-outline-secondary">*Please inquire for the exact measurements</button></a>
+			<a href="mailto:snoozeph.shop@gmail.com"><button type="button" class="btn btn-outline-secondary">*Please inquire for the exact measurements</button></a>
 		</div>
 		<div class="order-now col-lg-12 wow fadeIn">
 			<a href="<?php echo site_url('/order-page'); ?>"><button type="button" class="btn btn-secondary">Order now</button></a>
