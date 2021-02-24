@@ -27,7 +27,7 @@ get_header();
     </div><!-- .container-->
 </div><!-- .home-banner in header.php-->
 
-<div class="our-story">
+<div class="our-story" id="about">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-5 col-12 wow fadeIn" data-wow-delay="1s">
