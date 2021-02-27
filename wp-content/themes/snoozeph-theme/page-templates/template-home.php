@@ -75,7 +75,7 @@ get_header();
     <div class="container">
         <div class="row justify-content-center">     
             <div class="col-lg-10 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <?php echo do_shortcode('[testimonials_cycle theme="light_grey-classic_style" count="-1" order_by="date" order="ASC" show_title="0" use_excerpt="0" show_thumbs="1" show_date="1" show_other="1" hide_view_more="0" output_schema_markup="1" show_rating="stars" testimonials_per_slide="1" transition="fade" timer="5000" pause_on_hover="true" auto_height="container" show_pager_icons="1" prev_next="1" display_pagers_above="0" paused="0"]'); ?>
+                <?php echo do_shortcode('[do_widget id=text-6]'); ?>
             </div>            
         </div><!-- .row-->
     </div><!-- .container-->
