@@ -295,6 +295,19 @@ body {
             font-size: 12px;
         }
     }
+    span {
+        color: #b0b0b0;        
+    }
+    span a {
+        color: #b0b0b0;  
+        font-size: 14px;
+        @media(max-width: $sm) {
+            font-size: 12px;
+        } 
+        &:hover {
+            text-decoration: none;
+        }       
+    }
 }
 
 #single-wrapper {

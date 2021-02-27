@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <hr>
         <div class="row">
             <div class="col-lg-12">
-                <p class="text-center">snooze.ph <?php echo date('Y'); ?></p>
+                <p class="text-center">snooze.ph <?php echo date('Y'); ?> <span>| <a href="https://www.ivyswan.com/" target="_blank">website by Ivy Swan</a></span></p>
             </div>      
         </div>
     </div><!-- .container-->
