@@ -46,18 +46,19 @@ get_header();
                 <h2 class="text-center wow fadeInDown" data-wow-duration="2s">Products</h2>
             </div>
         </div><!-- .row-->
-        <div class="row">                                  
-                <?php 
+        <div class="row">                              
+                <?php
                 // wp-query to get all published posts without pagination
                 $allPostsWPQuery = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
                 <?php if ( $allPostsWPQuery->have_posts() ) : ?>                       
-
                     <?php while ( $allPostsWPQuery->have_posts() ) : $allPostsWPQuery->the_post(); ?>
                     <div class="product-item col-lg-4 col-6 text-center wow fadeInUp" data-wow-delay="1s"> 
-                        <a href="<?php the_permalink(); ?>">
-                            <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
-                            <img src="<?php echo $url ?>" />
-                        </a>
+                        <div class="product-image-holder">
+                            <a href="<?php the_permalink(); ?>">        
+                                <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>               
+                                <img src="<?php echo $url ?>" />
+                            </a>                        
+                        </div>
                         <p><?php the_title(); ?></p>
                         <?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?>
                     </div><!-- .col-->
