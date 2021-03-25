@@ -1,504 +1,515 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
-
 html {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
-    background-color: $background-color;
-    color: $font-color;
-    font-family: $body-text;
-    overflow-x: hidden;
+  background-color: $background-color;
+  color: $font-color;
+  font-family: $body-text;
+  overflow-x: hidden;
 }
 
 #wrapper-navbar {
-    display: none;
+  display: none;
 }
 
 .home-banner {
-    height: 900px;
-    background-image: url(../img/home-banner.jpg);
-    background-size: cover;
-    background-position: center;
-    @media(max-width: $sm) {
-        height: 700px;
+  height: 900px;
+  background-image: url(../img/home-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  @media (max-width: $sm) {
+    height: 700px;
+  }
+  .home-banner-heading {
+    margin-top: 150px;
+    h1 {
+      font-size: 70px;
+      font-family: $heading;
+      color: #f6f1e7;
+      @media (max-width: $sm) {
+        font-size: 50px;
+      }
     }
-    .home-banner-heading {
-        margin-top: 150px;
-        h1 {          
-            font-size: 70px;
-            font-family: $heading;
-            color: #F6F1E7;
-            @media(max-width: $sm) {
-                font-size: 50px;
-            }
-        }
-        p {
-            font-size: 40px;
-            font-family: 'Sacramento', cursive;
-            color: #3f3f44;
-            transform: translate(260px, -35px);
-            @media(max-width: $sm) {
-                font-size: 30px;
-                transform: translate(185px, -30px);
-            }
-        }
+    p {
+      font-size: 40px;
+      font-family: "Sacramento", cursive;
+      color: #3f3f44;
+      transform: translate(260px, -35px);
+      @media (max-width: $sm) {
+        font-size: 30px;
+        transform: translate(185px, -30px);
+      }
     }
-    .btn {
-        border-color: $background-color;
-        color: $background-color;
-        background-color: $font-color;
-        width: 150px;
-        @media(max-width: $md) {
-            width: 100px;
-            font-size: 14px;
-        }
+  }
+  .btn {
+    border-color: $background-color;
+    color: $background-color;
+    background-color: $font-color;
+    width: 150px;
+    @media (max-width: $md) {
+      width: 100px;
+      font-size: 14px;
     }
-    .btn:hover {
-        background-color: #3f3f44;
-        border-color: #3f3f44;
-    }
-    .btn:focus {
-        outline: none;
-        border: none;
-        box-shadow: none;
-    }
+  }
+  .btn:hover {
+    background-color: #3f3f44;
+    border-color: #3f3f44;
+  }
+  .btn:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
 }
 
 .our-story {
-    background-color: #fafafa;
-    margin-top: 150px;
-    @media(max-width: $lg) {
-        padding-bottom: 40px;
-        margin-top: 0;
+  background-color: #fafafa;
+  margin-top: 150px;
+  @media (max-width: $lg) {
+    padding-bottom: 40px;
+    margin-top: 0;
+  }
+  h3 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 65px;
+    font-family: "Sacramento", cursive;
+    @media (max-width: $sm) {
+      font-size: 45px;
     }
-    h3 {
-        margin-top: 50px;
-        margin-bottom: 30px;
-        font-size: 65px;
-        font-family: 'Sacramento', cursive;
-        @media(max-width: $sm) {
-            font-size: 45px;
-        }
+  }
+  p {
+    @media (max-width: $sm) {
+      font-size: 14px;
     }
-    p {
-        @media(max-width: $sm) {
-            font-size: 14px;
-        }
+  }
+  .textwidget {
+    margin-bottom: 60px;
+    @media (max-width: $lg) {
+      margin-bottom: 0;
     }
-    #story1 {
-        height: 550px;
-        background-image: url(../img/story.jpg);
-        background-size: cover;
-        background-position: -30px;
-        transform: translate(130px, -150px);
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    #story2 {
-        height: 550px;
-        background-image: url(../img/story2.jpg);
-        background-size: cover;
-        background-position: center;
-        transform: translate(130px, 0px);
-    }
+  }
+  #story1 {
+    height: 550px;
+    background-image: url(../img/story.jpg);
+    background-size: cover;
+    background-position: -30px;
+    transform: translate(130px, -150px);
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  #story2 {
+    height: 550px;
+    background-image: url(../img/story2.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: translate(130px, 0px);
+  }
 }
 
 .products {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    @media(max-width: $lg) {
-        margin-top: 50px;
-        margin-bottom: 50px;        
+  margin-top: 100px;
+  margin-bottom: 100px;
+  @media (max-width: $lg) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  @media (max-width: $sm) {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-family: $heading;
+    font-size: 40px;
+    text-transform: lowercase;
+    margin-bottom: 50px;
+    @media (max-width: $lg) {
+      margin-bottom: 0;
     }
-    @media(max-width: $sm) {
-        margin-top: 50px;
-        margin-bottom: 30px;             
+    @media (max-width: $sm) {
+      font-size: 25px;
     }
-    h2 {
-        font-family: $heading;
-        font-size: 40px;
-        text-transform: lowercase;
-        margin-bottom: 50px;
-        @media(max-width: $lg) {
-            margin-bottom: 0;
-        }
-        @media(max-width: $sm) {
-            font-size: 25px;
-        }
+  }
+  p {
+    text-transform: uppercase;
+  }
+  img {
+    margin-bottom: 30px;
+    height: 300px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    @media (max-width: $lg) {
+      margin-top: 30px;
     }
-    p {
-        text-transform: uppercase;
+    @media (max-width: $md) {
+      margin-bottom: 25px;
+      height: 200px;
     }
-    img {
-        margin-bottom: 30px;
-        height: 300px;
-        box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-        transition: .3s;
-        @media(max-width: $lg) {
-            margin-top: 30px;
-        }
-        @media(max-width: $md) {
-            margin-bottom: 25px;
-            height: 200px;
-        }
-        @media(max-width: $sm) {
-            margin-bottom: 20px;
-            height: 170px;
-        }
+    @media (max-width: $sm) {
+      margin-bottom: 20px;
+      height: 170px;
     }
-    img:hover {
-        box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
-        transform: scale(1.05,1.05);        
+  }
+  img:hover {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05, 1.05);
+  }
+  .product-item {
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 0.5;
+    @media (max-width: $md) {
+      font-size: 14px;
     }
-    .product-item {
-        margin-bottom: 20px;
-        font-weight: 700;     
-        line-height: .5;   
-        @media(max-width: $md) {
-            font-size: 14px;
-            line-height: .3;
-        }
-        @media(max-width: $sm) {
-            margin-bottom: 0;
-            font-size: 12px;
-            line-height: .2;
-        }
+    @media (max-width: $sm) {
+      margin-bottom: 0;
+      font-size: 12px;
+      line-height: 1.5;
+      p {
+        margin-bottom: 5px;
+      }
     }
+  }
+  .product-price {
+    opacity: 0.5;
+  }
 }
 
 .feedback {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    @media(max-width: $lg) {
-        margin-top: 50px;
-        margin-bottom: 50px;        
-    }
-    @media(max-width: $sm) {
-        margin-top: 0;
-        margin-bottom: 0;        
-    }
-    .testimonial-other {
-        display: none;
-    }
-    .light_grey-classic_style .main-wrapper, .easy_testimonial .main-wrapper:after {
-        background: #F6F1E7;
-    }
-    .easy_testimonial .title-area-3 .easy_testimonial_title, .easy_testimonial .main-content-3 p, .easy_testimonial .footer-text-3 .testimonial-client {
-        color: #CCAFA5;
-    }
-    .easy-t-cycle-pager span.cycle-pager-active {
-        color: #CCAFA5;
-    }
-    .testimonial_body {
-        font-family: 'Homemade Apple', cursive;
-    }
+  margin-top: 100px;
+  margin-bottom: 100px;
+  @media (max-width: $lg) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  @media (max-width: $sm) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .testimonial-other {
+    display: none;
+  }
+  .light_grey-classic_style .main-wrapper,
+  .easy_testimonial .main-wrapper:after {
+    background: #f6f1e7;
+  }
+  .easy_testimonial .title-area-3 .easy_testimonial_title,
+  .easy_testimonial .main-content-3 p,
+  .easy_testimonial .footer-text-3 .testimonial-client {
+    color: #ccafa5;
+  }
+  .easy-t-cycle-pager span.cycle-pager-active {
+    color: #ccafa5;
+  }
+  .testimonial_body {
+    font-family: "Homemade Apple", cursive;
+  }
 }
 
 .faqs {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    @media(max-width: $lg) {
-        margin-top: 50px;
-        margin-bottom: 50px;        
+  margin-top: 100px;
+  margin-bottom: 100px;
+  @media (max-width: $lg) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  @media (max-width: $sm) {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .accordion-button:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  .accordion-button:not(.collapsed),
+  .accordion-button {
+    background-color: $background-color;
+    color: $font-color;
+  }
+  .accordion-button {
+    font-weight: 700;
+    @media (max-width: $sm) {
+      font-size: 14px;
     }
-    @media(max-width: $sm) {
-        margin-top: 30px;
-        margin-bottom: 50px;   
+  }
+  .accordion-body {
+    text-align: center;
+    @media (max-width: $sm) {
+      font-size: 14px;
     }
-    .accordion-button:focus {
-        outline: none;
-        border: none;
-        box-shadow: none;
+    span {
+      text-transform: uppercase;
+      font-weight: 700;
     }
-    .accordion-button:not(.collapsed), .accordion-button {
-        background-color: $background-color;
-        color: $font-color;
+    ul {
+      list-style-type: none;
+      padding-left: 0;
     }
-    .accordion-button {
-        font-weight: 700;
-        @media(max-width: $sm) {
-            font-size: 14px;
-        }
+    a {
+      color: #ccafa5;
+      font-weight: 700;
+      transition: ease 0.25s all;
     }
-    .accordion-body {
-        text-align: center;
-        @media(max-width: $sm) {
-            font-size: 14px;
-        }
-        span {
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        a {
-            color: #CCAFA5;
-            font-weight: 700;
-            transition: ease 0.25s all;
-        }
-        a:hover {
-            color: $font-color;
-            text-decoration: none;
-            border-top: solid $font-color;
-            border-bottom: solid $font-color;
-            padding: 2px 5px;
-        }
+    a:hover {
+      color: $font-color;
+      text-decoration: none;
+      border-top: solid $font-color;
+      border-bottom: solid $font-color;
+      padding: 2px 5px;
     }
-    .amr_widget {
-        h3 {
-            display: none;
-        }
+  }
+  .amr_widget {
+    h3 {
+      display: none;
     }
+  }
 }
 
 .footer {
-	background-color: #988E92;
-        color: #F6F1E7;
-    ul {
-        padding: 0;
-        margin-top: 9rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        list-style-type: none;
-        @media(max-width: $md) {
-            margin-top: 4rem;
-            margin-bottom: 0;
-        }
-        @media(max-width: $sm) {
-            margin-top: 3rem;
-            margin-bottom: 0;
-            justify-content: space-evenly;
-        }
+  background-color: #988e92;
+  color: #f6f1e7;
+  ul {
+    padding: 0;
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    @media (max-width: $md) {
+      margin-top: 4rem;
+      margin-bottom: 0;
     }
-    a {
-        font-size: 4rem;
-        @media(max-width: $md) {
-            font-size: 3rem;
-        }
-        @media(max-width: $sm) {
-            font-size: 2rem;
-        }
-        color: #F6F1E7;
-        transition: ease 0.25s all;
-        &:hover {
-            color: #CCAFA5;
-        }    
+    @media (max-width: $sm) {
+      margin-top: 3rem;
+      margin-bottom: 0;
+      justify-content: space-evenly;
     }
-    i {
-        font-weight: 400;
+  }
+  a {
+    font-size: 4rem;
+    @media (max-width: $md) {
+      font-size: 3rem;
     }
-    p {
-        font-size: 14px;
-        @media(max-width: $sm) {
-            font-size: 12px;
-        }
+    @media (max-width: $sm) {
+      font-size: 2rem;
     }
-    span {
-        color: #b0b0b0;        
+    color: #f6f1e7;
+    transition: ease 0.25s all;
+    &:hover {
+      color: #ccafa5;
     }
-    span a {
-        color: #b0b0b0;  
-        font-size: 14px;
-        @media(max-width: $sm) {
-            font-size: 12px;
-        } 
-        &:hover {
-            text-decoration: none;
-        }       
+  }
+  i {
+    font-weight: 400;
+  }
+  p {
+    font-size: 14px;
+    @media (max-width: $sm) {
+      font-size: 12px;
     }
+  }
+  span {
+    color: #b0b0b0;
+  }
+  span a {
+    color: #b0b0b0;
+    font-size: 14px;
+    @media (max-width: $sm) {
+      font-size: 12px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 #single-wrapper {
-    padding: 40px 0;
-    @media(max-width: $sm) {
-        padding-bottom: 0;
+  padding: 40px 0;
+  @media (max-width: $sm) {
+    padding-bottom: 0;
+  }
+  h1 {
+    font-family: $heading;
+    font-size: 40px;
+    text-transform: lowercase;
+    @media (max-width: $sm) {
+      font-size: 25px;
     }
-    h1 {
-        font-family: $heading;
-        font-size: 40px;
-        text-transform: lowercase;
-        @media(max-width: $sm) {
-            font-size: 25px;
-        }
-    }  
-    a {
-        color: $font-color;
-    }  
-    img {
-        box-shadow:
-        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-        0 12.5px 10px rgba(0, 0, 0, 0.06),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-        0 100px 80px rgba(0, 0, 0, 0.12);
-    }
-    .wp-block-gallery {
-        margin-bottom: 30px;
-    }
-    .col-lg-12 {
-        margin-bottom: 30px;
-    }
+  }
+  a {
+    color: $font-color;
+  }
+  img {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  .wp-block-gallery {
+    margin-bottom: 30px;
+  }
+  .col-lg-12 {
+    margin-bottom: 30px;
+  }
+  .btn {
+    border-color: #ccafa5;
+  }
+  .btn:hover {
+    background-color: #988e92;
+    color: #f6f1e7;
+    border: 1px solid #988e92;
+  }
+  .order-now {
     .btn {
-        border-color: #CCAFA5;
+      border-color: $background-color;
+      color: $background-color;
+      background-color: $font-color;
+      width: 150px;
+      @media (max-width: $md) {
+        width: 100px;
+        font-size: 14px;
+      }
     }
     .btn:hover {
-        background-color: #988E92;
-        color: #F6F1E7;
-        border: 1px solid #988E92;
+      background-color: transparent;
+      border-color: #ccafa5;
+      color: $font-color;
     }
-    .order-now {
-        .btn {
-            border-color: $background-color;
-            color: $background-color;
-            background-color: $font-color;
-            width: 150px;
-            @media(max-width: $md) {
-                width: 100px;
-                font-size: 14px;
-            }
-        }
-        .btn:hover {
-            background-color: transparent;
-            border-color: #CCAFA5;
-            color: $font-color;
-        }
+  }
+  .care-guide {
+    p {
+      font-size: 14px;
+      font-style: italic;
+      @media (max-width: $sm) {
+        font-size: 12px;
+      }
     }
-    .care-guide {
-        p {
-            font-size: 14px;
-            font-style: italic;
-            @media(max-width: $sm) {
-                font-size: 12px;
-            }
-        }
-    }
+  }
 }
 
 .order-form {
-    padding: 40px 0;
-    h1 {
-        font-family: $heading;
-        font-size: 40px;
-        text-transform: lowercase;
-        margin-bottom: 30px;
-        @media(max-width: $sm) {
-            font-size: 25px;
-        }
-    }  
-    span {
-        font-size: 22px;
-        font-weight: 700;
-        @media(max-width: $sm) {
-            font-size: 18px;
-        }
+  padding: 40px 0;
+  h1 {
+    font-family: $heading;
+    font-size: 40px;
+    text-transform: lowercase;
+    margin-bottom: 30px;
+    @media (max-width: $sm) {
+      font-size: 25px;
     }
-    .btn {
-        border-color: #CCAFA5;
-        margin-right: 10px;
+  }
+  span {
+    font-size: 22px;
+    font-weight: 700;
+    @media (max-width: $sm) {
+      font-size: 18px;
     }
-    .btn:hover {
-        background-color: #988E92;
-        color: #F6F1E7;
-        border: 1px solid #988E92;
-    }
-    .wpforms-container-full .wpforms-form .wpforms-required-label {
-        color: $font-color;
-    }    
-    #wpforms-submit-148 {
-        border-color: #CCAFA5;
-        border-radius: 5px;
-        background-color: transparent;
-        transition: .3s;
-        float: right;
-    }
-    #wpforms-submit-148:hover {
-        background-color: #988E92;
-        color: #F6F1E7;
-        border: 1px solid #988E92;
-    }
+  }
+  .btn {
+    border-color: #ccafa5;
+    margin-right: 10px;
+  }
+  .btn:hover {
+    background-color: #988e92;
+    color: #f6f1e7;
+    border: 1px solid #988e92;
+  }
+  .wpforms-container-full .wpforms-form .wpforms-required-label {
+    color: $font-color;
+  }
+  #wpforms-submit-148 {
+    border-color: #ccafa5;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 0.3s;
+    float: right;
+  }
+  #wpforms-submit-148:hover {
+    background-color: #988e92;
+    color: #f6f1e7;
+    border: 1px solid #988e92;
+  }
 }
 
 .order-confirmation {
-    padding: 40px 0;
-    height: 800px;
-    @media(max-width: $lg) {
-        height: 700px;
+  padding: 40px 0;
+  height: 800px;
+  @media (max-width: $lg) {
+    height: 700px;
+  }
+  @media (max-width: $sm) {
+    height: 600px;
+  }
+  h1 {
+    font-family: $heading;
+    font-size: 40px;
+    text-transform: lowercase;
+    margin-bottom: 50px;
+    @media (max-width: $sm) {
+      font-size: 25px;
     }
-    @media(max-width: $sm) {
-        height: 600px;
-    }
-    h1 {
-        font-family: $heading;
-        font-size: 40px;
-        text-transform: lowercase;
-        margin-bottom: 50px;
-        @media(max-width: $sm) {
-            font-size: 25px;
-        }
-    }  
-    .btn {
-        border-color: #CCAFA5;
-    }
-    .btn:hover {
-        background-color: #988E92;
-        color: #F6F1E7;
-        border: 1px solid #988E92;
-    }
+  }
+  .btn {
+    border-color: #ccafa5;
+  }
+  .btn:hover {
+    background-color: #988e92;
+    color: #f6f1e7;
+    border: 1px solid #988e92;
+  }
 }
 
 .privacy-policy {
-    .privacy {
-        margin-top: 40px;
-        margin-bottom: 40px;
+  .privacy {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-family: $heading;
+    font-size: 40px;
+    text-transform: lowercase;
+    margin-bottom: 30px;
+    @media (max-width: $sm) {
+      font-size: 25px;
     }
-    h1 {
-        font-family: $heading;
-        font-size: 40px;
-        text-transform: lowercase;
-        margin-bottom: 30px;
-        @media(max-width: $sm) {
-            font-size: 25px;
-        }
-    }  
-    h2 {
-        font-size: 30px;
-        font-weight: 700;
-        @media(max-width: $sm) {
-            font-size: 20px;
-        }
-    } 
-    h3 {
-        font-size: 25px;
-        font-weight: 700;
-        @media(max-width: $sm) {
-            font-size: 15px;
-        }
-    } 
-    p {
-        @media(max-width: $sm) {
-            font-size: 14px;
-        }        
-    }   
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    @media (max-width: $sm) {
+      font-size: 20px;
+    }
+  }
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+    @media (max-width: $sm) {
+      font-size: 15px;
+    }
+  }
+  p {
+    @media (max-width: $sm) {
+      font-size: 14px;
+    }
+  }
 }
 
 .error-404 {
-    li a {
-        color: #ccafa5;
-    }
-    .btn {
-        border-color: $background-color;
-        color: $background-color;
-        background-color: $font-color;
-    }
-    .btn:hover {
-        background-color: transparent;
-        border-color: #CCAFA5;
-        color: $font-color;
-    }
+  li a {
+    color: #ccafa5;
+  }
+  .btn {
+    border-color: $background-color;
+    color: $background-color;
+    background-color: $font-color;
+  }
+  .btn:hover {
+    background-color: transparent;
+    border-color: #ccafa5;
+    color: $font-color;
+  }
 }

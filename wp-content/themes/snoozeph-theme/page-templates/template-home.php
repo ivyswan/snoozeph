@@ -42,8 +42,8 @@ get_header();
 <div class="products" id="products">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <h2 class="text-center wow fadeInDown" data-wow-duration="2s">Products</h2>
+            <div class="col-lg-12 text-center">
+                <h2 class="wow fadeInDown" data-wow-duration="2s">Products</h2>
             </div>
         </div><!-- .row-->
         <div class="row">                              
@@ -60,7 +60,7 @@ get_header();
                             </a>                        
                         </div>
                         <p><?php the_title(); ?></p>
-                        <?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?>
+                        <p class="product-price"><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></p>                       
                     </div><!-- .col-->
                     <?php endwhile; ?>
 
